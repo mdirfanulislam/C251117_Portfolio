@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary: #030a16;
+    --secondary: #E2E2E8;
+    --disabled: #fff3;
+    --des: #C2C6D8;
+    --aqua: #00d1d1;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    background: var(--primary);
+    color: var(--white);
+    min-height: 100dvh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 90px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0.8rem;
+    background: var(--primary);
+    backdrop-filter: blur(0px);
+    background: #030a16d9;
+}
+
+
+.brand-info {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.brand-info a img {
+    width: clamp(50px, 8vw, 70px);
+    height: clamp(40px, 8vw, 60px);
+}
+
+.brand-info a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+}
+
+.brand-info a span {
+    color: var(--aqua);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#overlay {
+    display: none;
+}
+
+#menu-toggle:checked~#overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #030a16f2;
+    z-index: 1500;
+}
+
+nav {
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    position: fixed;
+    top: 80px;
+    left: 1rem;
+    right: 1rem;
+    z-index: 2001;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s ease-in-out;
+}
+
+#menu-toggle:checked~nav {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+nav a {
+    text-align: center;
+    padding: 0.8rem;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: 600;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--aqua);
+}
+
+nav a.active {
+    color: var(--white);
+    border-color: var(--aqua);
+    background-color: var(--aqua);
+    padding: 0.4rem;
+}
+
+@media (min-width: 1023px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        gap: clamp(1.5rem, 4vw, 3rem);
+        width: min(1200px, 100%);
+        margin: 0 auto;
+        padding-inline: clamp(1rem, 3vw, 2rem);
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        gap: clamp(1rem, 2vw, 2rem);
+        background: transparent;
+    }
+
+    nav a {
+        padding: 0;
+        border: none;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+    }
+}
