@@ -133,8 +133,6 @@
     line-height: 1.7;
 }
 
-/* Tablet */
-
 @media (max-width: 1023px) {
 
     .timeline::before {
