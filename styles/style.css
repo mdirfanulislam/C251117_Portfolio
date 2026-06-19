@@ -16,16 +16,15 @@
     font-family: "Inter", sans-serif;
 }
 
-html,
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--primary);
     color: var(--white);
     min-height: 100dvh;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-body {
     padding-top: 90px;
 }
 
@@ -39,11 +38,8 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 0.8rem;
-    background: var(--primary);
-    backdrop-filter: blur(0px);
     background: #030a16d9;
 }
-
 
 .brand-info {
     display: flex;
@@ -52,41 +48,12 @@ header {
 }
 
 .brand-info a img {
-    width: clamp(50px, 8vw, 70px);
-    height: clamp(40px, 8vw, 60px);
-}
-
-.brand-info a {
-    color: white;
-    text-decoration: none;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 800;
-}
-
-.brand-info a span {
-    color: var(--aqua);
-}
-
-#menu-toggle {
-    display: none;
+    width: 120px;
 }
 
 .menu-icon {
     font-size: 2rem;
-    font-weight: 800;
     cursor: pointer;
-}
-
-#overlay {
-    display: none;
-}
-
-#menu-toggle:checked~#overlay {
-    display: block;
-    position: fixed;
-    inset: 0;
-    background: #030a16f2;
-    z-index: 1500;
 }
 
 nav {
@@ -130,8 +97,7 @@ nav a:hover {
 nav a.active {
     color: var(--white);
     border-color: var(--aqua);
-    background-color: var(--aqua);
-    padding: 0.4rem;
+    background-color: var(--aqua);padding: 0.4rem;
 }
 
 @media (min-width: 1023px) {
@@ -139,7 +105,8 @@ nav a.active {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: center;
-        width: min(1200px, 100%);
+        max-width: 1200px;
+        width: 100%;
         margin: 0 auto;
         padding-inline: clamp(1rem, 3vw, 2rem);
     }
