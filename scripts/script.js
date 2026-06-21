@@ -1,14 +1,13 @@
+const toggle = document.getElementById("menu-toggle");
 const links = document.querySelectorAll('nav a');
 const currentPage = window.location.pathname;
 
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.querySelectorAll("nav a");
-
-navLinks.forEach(link => {
+links.forEach(link => {
     link.addEventListener("click", () => {
         toggle.checked = false;
     });
 });
+
 
 function setActiveLink() {
     const currentHash = window.location.hash || "#home";
