@@ -87,7 +87,7 @@
 .social-links {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .social-links a {
@@ -342,10 +342,6 @@
 
     .feature-cards {
         grid-template-columns: 1fr;
-    }
-
-    .social-links {
-        justify-content: center;
     }
 
     .stack-grid {
