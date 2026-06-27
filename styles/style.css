@@ -44,7 +44,7 @@ header {
 .brand-info {
     display: flex;
     align-items: center;
-    gap: clamp(0.75rem, 2vw, 1.5rem);
+    gap: 1.5rem;
 }
 
 .brand-info a img {
@@ -81,7 +81,7 @@ nav {
 nav a {
     text-align: center;
     padding: 0.8rem;
-    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: 600;
     border: 2px solid var(--secondary);
     border-radius: 10px;
@@ -97,7 +97,8 @@ nav a:hover {
 nav a.active {
     color: var(--white);
     border-color: var(--aqua);
-    background-color: var(--aqua);padding: 0.4rem;
+    background-color: var(--aqua);
+    padding: 0.4rem;
 }
 
 @media (min-width: 1023px) {
@@ -108,7 +109,7 @@ nav a.active {
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
-        padding-inline: clamp(1rem, 3vw, 2rem);
+        padding-inline: 2rem;
     }
 
     .menu-icon {
@@ -122,13 +123,13 @@ nav a.active {
         transform: none;
         opacity: 1;
         pointer-events: auto;
-        gap: clamp(1rem, 2vw, 2rem);
+        gap: 2rem;
         background: transparent;
     }
 
     nav a {
         padding: 0;
         border: none;
-        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        font-size: 1.2rem;
     }
 }

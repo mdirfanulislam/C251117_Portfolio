@@ -1,7 +1,7 @@
 .qualification {
     width: min(1000px, 80%);
-    margin: clamp(4rem, 8vw, 8rem) auto;
-    padding-inline: clamp(1rem, 3vw, 2rem);
+    margin: 8rem auto;
+    padding-inline: 2rem;
 }
 
 .qualification-header {
@@ -18,7 +18,7 @@
 }
 
 .qualification-header h2 {
-    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -101,7 +101,6 @@
 }
 
 @media (max-width: 768px) {
-
     .qualification {
         width: 100%;
         padding-inline: 1rem;

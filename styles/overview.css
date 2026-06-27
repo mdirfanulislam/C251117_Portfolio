@@ -4,15 +4,15 @@
     align-items: stretch;
     gap: 1.5rem;
     width: min(1200px, 100%);
-    margin: clamp(1rem, 4vw, 3rem) auto;
-    padding-inline: clamp(1rem, 3vw, 2rem);
+    margin: 3rem auto;
+    padding-inline: 2rem;
 }
 
 .overview div {
     background-color: #E2E2E805;
     border: 1px solid #E2E2E820;
     border-radius: 1rem;
-    padding: clamp(1rem, 3vw, 1.5rem);
+    padding: 1.5rem;
     text-align: left;
     transition: all 0.4s ease-in-out;
 }
@@ -29,7 +29,7 @@
     font-weight: 500;
 }
 
-.overview div p{
+.overview div p {
     color: var(--des);
     font-size: 12px;
 }
@@ -47,15 +47,17 @@
 
     .overview div {
         text-align: center;
+        padding: 1.25rem;
     }
 }
 
 @media (max-width: 576px) {
     .overview {
         grid-template-columns: 1fr;
+        padding-inline: 1rem;
     }
 
     .overview div {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }

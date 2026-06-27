@@ -6,10 +6,10 @@
     display: grid;
     grid-template-columns: 420px 1fr;
     align-items: start;
-    gap: clamp(2rem, 5vw, 5rem);
+    gap: 5rem;
     width: min(1200px, 100%);
-    margin: clamp(3rem, 6vw, 6rem) auto;
-    padding-inline: clamp(1rem, 3vw, 2rem);
+    margin: 6rem auto;
+    padding-inline: 2rem;
 }
 
 .profile-card {
@@ -44,8 +44,8 @@
     height: 100%;
     object-fit: cover;
     filter: grayscale(100%);
-    transition: all 0.5s ease-in-out;
     transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
 
 .profile-card:hover .profile-image img {
@@ -54,7 +54,7 @@
 }
 
 .profile-card h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 3rem;
     margin-bottom: 0.7rem;
 }
 
@@ -78,8 +78,8 @@
 }
 
 .profile-desc {
-    font-size: 1rem;
     color: #b7bdd1;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
@@ -91,31 +91,31 @@
 }
 
 .social-links a {
-    background-color: #E2E2E805;
-    color: var(--aqua);
-    width: 48px;
-    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #E2E2E805;
+    color: var(--aqua);
     text-decoration: none;
-    border-radius: 12px;
     border: 1px solid #ffffff1a;
+    border-radius: 12px;
     transition: all 0.3s ease-in-out;
 }
 
 .social-links a:hover {
-    color: var(--white);
     background: var(--aqua);
+    color: var(--white);
 }
 
 .contact-btn {
     display: block;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: white;
-    background-color: var(--aqua);
-    padding: 1rem;
+    color: var(--white);
+    background: var(--aqua);
     border-radius: 1rem;
     font-weight: 600;
     transition: all 0.5s ease-in-out;
@@ -133,16 +133,16 @@
 
 .subtitle {
     color: var(--aqua);
-    letter-spacing: 3px;
     font-size: 0.8rem;
     font-weight: 600;
+    letter-spacing: 3px;
     margin-bottom: 1.5rem;
 }
 
 .story-content p {
     color: #c2c6d8;
-    line-height: 1.9;
     font-size: 1rem;
+    line-height: 1.9;
     margin-bottom: 1.8rem;
 }
 
@@ -155,21 +155,21 @@
 
 .feature-card {
     padding: 1rem;
-    border-radius: 1.5rem;
     background: #ffffff08;
     border: 1px solid #ffffff14;
+    border-radius: 1.5rem;
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1.2rem;
     background: #6366f126;
     color: var(--aqua);
-    margin-bottom: 1.2rem;
+    border-radius: 12px;
 }
 
 .feature-card h3 {
@@ -178,49 +178,16 @@
 }
 
 .feature-card p {
-    font-size: 0.8rem;
     margin: 0;
+    font-size: 0.8rem;
     line-height: 1.7;
 }
 
-@media (max-width: 1023px) {
-    .about {
-        grid-template-columns: 1fr;
-    }
-
-    .profile-card {
-        max-width: 550px;
-        margin-inline: auto;
-    }
-
-    .profile-image {
-        height: 550px;
-    }
-
-    .story-content {
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .profile-image {
-        height: 350px;
-    }
-
-    .feature-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-}
-
+/* Teck Stack */
 .tech-stack {
     width: min(1200px, 100%);
-    margin: clamp(3rem, 6vw, 6rem) auto;
-    padding-inline: clamp(1rem, 3vw, 2rem);
+    margin: 6rem auto;
+    padding-inline: 2rem;
 }
 
 .section-title {
@@ -240,9 +207,9 @@
 
 .section-title span {
     padding: 0.75rem 1.5rem;
-    border-radius: 999px;
     border: 1px solid #ffffff14;
-    font-size: clamp(1rem 4vw 1.5rem);
+    border-radius: 999px;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -259,16 +226,16 @@
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+    min-height: 110px;
     background: #E2E2E805;
     border: 1px solid #E2E2E820;
     border-radius: 1.2rem;
-    min-height: 110px;
     transition: 0.3s;
 }
 
 .stack-card:hover {
     transform: translateY(-5px);
-    border: 1px solid #00d1d150;
+    border-color: #00d1d150;
 }
 
 .stack-card i {
@@ -280,10 +247,11 @@
     letter-spacing: 2px;
 }
 
+/* Experience */
 .experience {
     width: min(1200px, 100%);
-    margin: clamp(3rem, 6vw, 6rem) auto;
-    padding-inline: clamp(1rem, 3vw, 2rem);
+    margin: 6rem auto;
+    padding-inline: 2rem;
 }
 
 .experience-heading {
@@ -300,41 +268,33 @@
 }
 
 .experience-heading h2 {
+    font-size: 1.5rem;
     letter-spacing: 1px;
-    font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 .experience-table {
     overflow: hidden;
-    border-radius: 1.2rem;
-    border: 1px solid #ffffff14;
     background: #ffffff05;
+    border: 1px solid #ffffff14;
+    border-radius: 1.2rem;
 }
 
 .table-header {
     display: grid;
     grid-template-columns: 2fr 2.1fr 0.41fr;
-    justify-content: space-between;
     align-items: center;
     padding: 1.4rem 1.2rem;
-}
-
-.table-row {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 1.2rem;
-}
-
-.table-header {
-    background-color: #E2E2E805;
+    background: #E2E2E805;
     color: var(--aqua);
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    align-items: center;
+    padding: 1.4rem 1.2rem;
     border-top: 1px solid #E2E2E820;
 }
 
@@ -349,12 +309,45 @@
 }
 
 @media (max-width: 1023px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        max-width: 550px;
+        margin-inline: auto;
+    }
+
+    .profile-image {
+        height: 550px;
+    }
+
+    .story-content {
+        text-align: center;
+    }
+
     .stack-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 576px) {
+    .about {
+        gap: 2rem;
+    }
+
+    .profile-image {
+        height: 350px;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
     .stack-grid {
         grid-template-columns: repeat(2, 1fr);
     }
