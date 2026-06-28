@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
     --primary: #030a16;
@@ -23,22 +23,21 @@ html {
 body {
     background: var(--primary);
     color: var(--white);
-    min-height: 100dvh;
-    overflow-x: hidden;
     padding-top: 90px;
 }
 
+/* Header */
 header {
+    display: flex;
+    background: #030a16d9;
+    align-items: center;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2000;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    z-index: 1;
     padding: 0.8rem;
-    background: #030a16d9;
 }
 
 .brand-info {
@@ -49,11 +48,6 @@ header {
 
 .brand-info a img {
     width: 120px;
-}
-
-.menu-icon {
-    font-size: 2rem;
-    cursor: pointer;
 }
 
 nav {
@@ -70,6 +64,11 @@ nav {
     opacity: 0;
     pointer-events: none;
     transition: all 0.35s ease-in-out;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 #menu-toggle:checked~nav {
@@ -104,7 +103,7 @@ nav a.active {
 @media (min-width: 1023px) {
     header {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         max-width: 1200px;
         width: 100%;
