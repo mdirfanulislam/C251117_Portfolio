@@ -1,0 +1,76 @@
+#projects {
+    scroll-margin-top: 100px;
+}
+
+.projects {
+    width: min(1200px, 100%);
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project div {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.project01 {
+    background-image: url("/assets/projects/car-store.png");
+}
+
+.project02 {
+    background-image: url("/assets/projects/cs-ticket.png");
+}
+
+.project03 {
+    background-image: url("/assets/projects/doctors-portal.png");
+}
+
+.project a {
+    margin: 50px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary);
+    color: var(--aqua);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.project div:hover {
+    transform: scale(1.05);
+}
+
+.project div:hover::before,
+.project div:hover a {
+    opacity: 1;
+}
+
+.project div a:hover {
+    background-color: var(--aqua);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+}
