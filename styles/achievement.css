@@ -1,34 +1,38 @@
-.qualification {
+#achievements {
+    scroll-margin-top: 100px;
+}
+
+.achievement {
     width: min(1200px, 100%);
-    margin: 8rem auto;
+    margin: 5rem auto;
     padding-inline: 2rem;
 }
 
-.qualification-header {
+.achievement-header {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
-.qualification-header span {
+.achievement-header span {
     color: var(--aqua);
     letter-spacing: 2px;
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
 }
 
-.qualification-header h2 {
+.achievement-header h2 {
     font-size: 2rem;
     font-weight: 800;
 }
 
-.timeline {
+.series {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
 
-.timeline::before {
+.series::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -39,7 +43,7 @@
     transform: translateX(-50%);
 }
 
-.timeline-title {
+.series-title {
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -49,34 +53,13 @@
     margin-bottom: 2rem;
 }
 
-.timeline-title i {
+.series-title i {
     color: var(--aqua);
 }
 
-.timeline-item {
+.series-item {
     position: relative;
-    margin-bottom: 1.5rem;
-}
-
-.timeline-card {
-    background: #ffffff05;
-    border: 1px solid #ffffff14;
-    border-radius: 1.25rem;
-    padding: 2rem;
-    transition: 0.3s;
-}
-
-.timeline-card:hover {
-    transform: translateY(-5px);
-    border-color: #00d1d150;
-}
-
-.education .timeline-item::after {
-    right: -47px;
-}
-
-.courses .timeline-item::after {
-    left: -47px;
+    margin-bottom: 2rem;
 }
 
 .year {
@@ -87,14 +70,18 @@
     margin-bottom: 1rem;
 }
 
-.timeline-card h3 {
-    font-size: 1rem;
-    line-height: 1.5;
+.series-card {
+    height: 120px;
+}
+
+.series-card h3 {
+    font-size: 1.2rem;
+    line-height: 1.2;
     margin-bottom: 0.8rem;
 }
 
-.timeline-card p {
-    font-size: 0.7rem;
+.series-card p {
+    font-size: 1rem;
     color: var(--des);
     line-height: 1.7;
 }
@@ -109,28 +96,24 @@
         margin-bottom: 3rem;
     }
 
-    .timeline {
+    .series {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
 
-    .timeline::before {
+    .series::before {
         display: none;
     }
 
-    .timeline-title,
-    .timeline-title.left,
-    .timeline-title.right {
+    .series-title,
+    .series-title.left,
+    .series-title.right {
         justify-content: center;
         text-align: center;
         margin-bottom: 1.5rem;
     }
 
-    .timeline-item::after {
-        display: none;
-    }
-
-    .timeline-card {
-        padding: 1.5rem;
+    .series-card {
+        padding: 1rem;
     }
 }

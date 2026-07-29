@@ -9,9 +9,21 @@
     text-align: center;
 }
 
-.projects h2 {
+.projects-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.projects-header h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 800;
+}
+
+.projects-header span {
+    color: var(--aqua);
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 
 .project {
@@ -30,7 +42,7 @@
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    transition: transform 0.4s ease;
+    transition: all 0.4s ease-in-out;
 }
 
 .project01 {
