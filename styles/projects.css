@@ -46,15 +46,15 @@
 }
 
 .project01 {
-    background-image: url("/assets/projects/car-store.png");
+    background-image: url("../assets/projects/car-store.png");
 }
 
 .project02 {
-    background-image: url("/assets/projects/cs-ticket.png");
+    background-image: url("../assets/projects/cs-ticket.png");
 }
 
 .project03 {
-    background-image: url("/assets/projects/doctors-portal.png");
+    background-image: url("../assets/projects/doctors-portal.png");
 }
 
 .project a {
