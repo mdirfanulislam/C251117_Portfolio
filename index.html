@@ -151,7 +151,7 @@
                                 class="fa-brands fa-linkedin-in"></i></a>
                     </div>
 
-                    <a href="#" class="contact-btn">Get In Touch</a>
+                    <a href="#contacts" class="contact-btn">Get In Touch</a>
                 </div>
 
                 <div class="story-content">
@@ -372,7 +372,6 @@
 
                     <a href="https://niche-website-mdirfanulislam.web.app/" target="_blank"><i
                             class="fas fa-external-link-alt"></i></a>
-
                 </div>
                 <div class="project02">
                     <a href="https://github.com/mdirfanulislam/niche-website-client-side-mdirfanulislam"
@@ -499,7 +498,7 @@
             </div>
 
             <div class="contact">
-                <!-- Left Side -->
+
                 <div class="contact-left">
 
                     <h2>
@@ -541,7 +540,6 @@
                     </div>
                 </div>
 
-                <!-- Right Side -->
                 <div class="contact-right">
 
                     <h2>
@@ -549,21 +547,22 @@
                         Write Me Queries
                     </h2>
 
-                    <form id="contactForm">
+                    <form name="contactForm" id="contactForm">
 
                         <div class="input-box">
                             <label>Name</label>
-                            <input type="text" id="name" placeholder="Insert your name">
+                            <input type="text" id="name" name="name" placeholder="Insert your name" required>
                         </div>
 
                         <div class="input-box">
                             <label>Email</label>
-                            <input type="email" id="email" placeholder="Insert your email">
+                            <input type="email" id="email" name="email" placeholder="Insert your email" required>
                         </div>
 
                         <div class="input-box">
                             <label>Message</label>
-                            <textarea id="message" placeholder="Write your details query"></textarea>
+                            <textarea id="message" name="message" placeholder="Write your details query"
+                                required></textarea>
                         </div>
 
                         <button type="submit">
@@ -572,7 +571,6 @@
                         </button>
 
                     </form>
-
                 </div>
             </div>
 
