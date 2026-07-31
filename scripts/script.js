@@ -28,24 +28,25 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxeYyAT4YofNFX4K6z9M2
 const form = document.getElementById('contactForm')
 const status = document.getElementById('sub-status')
 const subBtn = document.getElementById('contact-btn')
-subBtn.disabled = false;
-status.textContent = ''
+
 form.addEventListener('submit', e => {
     e.preventDefault()
+    subBtn.disabled = true;
+    status.textContent = '';
     fetch(scriptURL, {
         method: 'POST',
         body: new FormData(form)
     })
         .then(response => {
             form.reset();
-            subBtn.disabled = true;
+            subBtn.disabled = false;
             status.textContent = "Message Submitted Successfully!";
             status.className = "sub-status success";
             console.log('Success!', response);
         })
         .catch(error => {
             subBtn.disabled = false;
-            statusEl.textContent = "Something went wrong.";
+            status.textContent = "Something went wrong.";
             status.className = "sub-status error";
             console.error('Error!', error);
         })
