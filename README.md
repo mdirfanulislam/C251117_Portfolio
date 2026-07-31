@@ -1,6 +1,6 @@
 # Irfan's Portfolio Website
 
-# Github Repo Link: [https://github.com/mdirfanulislam/C251117_Portfolio]
+# GitHub Repo Link: [https://github.com/mdirfanulislam/C251117_Portfolio]
 # Live Link: [https://c251117irfan.vercel.app]
 
 A responsive personal portfolio website showcasing my skills, projects, achievements, publications, and contact information. This project is built using HTML, CSS, and JavaScript and demonstrates a modern portfolio design with a clean user interface.
@@ -16,29 +16,30 @@ A responsive personal portfolio website showcasing my skills, projects, achievem
 
 # About
 * Personal introduction
-* Technical skills
 * Technology stack
 * Experience section
-* Educational qualification timeline
+* Educational qualification
 
 # Projects
 * Featured projects
 * GitHub repository links
-* Live project demo links
+* Live project links
 
 # Achievements
 * Programming contest achievements
 
 # Publications
-* Demo research paper showcase
-* Demo publication descriptions
 * Demo publication preview images
+* Demo publication descriptions
+
+# Blogs
+* Demo writing blogs
 
 # Contact
 * Email
 * LinkedIn
 * WhatsApp
-* Contact form connected to google sheet for user messages
+* Contact form connected to Google Sheet for user messages
 
 # Technologies Used
 * HTML5
@@ -52,40 +53,40 @@ A responsive personal portfolio website showcasing my skills, projects, achievem
 * │
 * ├── index.html
 * ├── assets/
-* │   ├── projects/
-* |   │   ├── car-store.png
-* │   │   ├── cs-ticket.png
-* │   │   └── doctors-portal.png
-* │   │
-* │   ├── publications/
-* │   │    ├── paper01.png
-* │   │    ├── paper02.png
-* │   │    └── paper03.png
-* │   │
-* │   ├── resume
-* │   │   ├──Mohammad_Irfanul_Islam_Resume.pdf
-* │   │
-* │   ├── irfan-avatar.png
-* │   ├── irfan.png
-* │   ├── Irfan2.png
-* │   ├── logo_1.png
-* │   ├── logo-1.png
-* │   └── logo.png
+* │     ├── projects/
+* |     │     ├── car-store.png
+* │     │     ├── cs-ticket.png
+* │     │     └── doctors-portal.png
+* │     │
+* │     ├── publications/
+* │     │     ├── paper01.png
+* │     │     ├── paper02.png
+* │     │     └── paper03.png
+* │     │
+* │     ├── resume
+* │     │       ├──Mohammad_Irfanul_Islam_Resume.pdf
+* │     │
+* │     ├── irfan-avatar.png
+* │     ├── irfan.png
+* │     ├── Irfan2.png
+* │     ├── logo_1.png
+* │     ├── logo-1.png
+* │     └── logo.png
 * │
 * ├── styles/
-* │   ├── style.css
-* │   ├── home.css
-* │   ├── about.css
-* │   ├── overview.css
-* │   ├── qualification.css
-* │   ├── projects.css
-* │   ├── achievement.css
-* │   ├── publication.css
-* │   ├── contact.css
-* │   └── footer.css
+* │     ├── style.css
+* │     ├── home.css
+* │     ├── about.css
+* │     ├── overview.css
+* │     ├── qualification.css
+* │     ├── projects.css
+* │     ├── achievement.css
+* │     ├── publication.css
+* │     ├── contact.css
+* │     └── footer.css
 * │
 * ├── scripts/
-* │   └── script.js
+* │     └── script.js
 * │
 * └── README.md
 
@@ -120,6 +121,7 @@ https://www.figma.com/proto/GdaJWo0wfyTCqlWaZa3CLO/Portfolio?node-id=41-7&p=f&t=
 * Projects
 * Achievements
 * Publications
+* Blogs
 * Contact
 
 # Contact
@@ -131,7 +133,6 @@ https://www.figma.com/proto/GdaJWo0wfyTCqlWaZa3CLO/Portfolio?node-id=41-7&p=f&t=
 # Future Improvements
 * Dark mode
 * Project filtering
-* Blog section
 * Backend integration
 * Admin dashboard
 * Better animations
